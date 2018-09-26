@@ -1,0 +1,115 @@
+
+<!doctype html>
+<html>
+<head>
+		<meta charset="utf-8"> 
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+
+
+
+
+function check(){
+    var firstnum = parseInt(document.getElementById('first').value);
+   var secondnum = parseInt(document.getElementById('second').value);
+
+   var first=Boolean(firstnum);
+      var second=Boolean(secondnum);
+
+
+    var funct = document.getElementById('func').value;
+
+
+switch (true){
+
+ case funct == 've':
+  
+
+ if(first === true && second === true){
+
+alert('önermelerin sonucu doğrudur');
+ }else{
+ alert('önermelerin sonucu yanlıştır');
+ }
+
+break;
+  case funct == 'veya':   
+ if(first === false  && second === false){
+ alert('önermelerin sonucu yanlıştır');
+ }else{
+       alert('önermelerin sonucu  doğrudur');
+ }
+
+  break;
+
+  case funct == 'ise':   
+ if(first === true  && second === false){
+ alert('önermelerin sonucu yanlıştır');
+ }else{
+       alert('önermelerin sonucu doğrudur');
+ }
+
+  break;
+case funct == 'ancak':   
+ if(first === true  && second === false || first === false && second === true ){
+ alert('önermelerin sonucu yanlıştır');
+ }else{
+       alert('önermelerin sonucu doğrudur');
+ }
+
+  break;
+
+}
+
+}
+</script>
+</head>
+<body>
+		<center>
+	<section>
+	<header>
+		
+
+	
+<h1>Logic Rules for Beginners /Başlangıç seviyesindekiler için mantık kuralları</h1>
+	
+
+	</header>
+
+	<label>birinci değer /first value </label>
+	<br>
+<select id="first">
+  <option value="1">Doğru Önerme  ,true statement   1</option>
+  <option value="0">Yanlış Önerme ,false statement  0</option>
+<br>
+</select>
+<br><br>
+<label>ikinci değer / second value </label>
+	<br>
+<select id="second">
+  <option value="1">Doğru Önerme, true statement  1</option>
+  <option value="0">Yanlış Önerme ,false statement   0</option>
+<br>
+</select>
+<br>
+<br>
+<select id="func">
+  <option value="ve"> and connector / Ve bağlacı</option>
+  <option value="veya">Or connector / Veya bağlacı</option>
+    <option value="ise">While connector /ise bağlacı</option>
+     <option value="ancak">	if and only if  connector /ancak ve ancak bağlacı</option>
+<br>
+</select>
+<br>
+<br>
+<button onclick="check()">Sonucu Göster</button>
+	<footer>
+
+
+	</footer>
+	</center>
+</body>
+</html>
+

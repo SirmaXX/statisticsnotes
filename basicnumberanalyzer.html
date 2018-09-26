@@ -1,0 +1,67 @@
+
+<!doctype html>
+<html>
+<head>
+		<meta charset="utf-8"> 
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+		<center>
+	<section>
+	<header>
+		
+
+	
+<h1>Mode ,median ,range</h1>
+	
+
+<p id="demo"></p>
+
+<script>
+var names = [22, 33, 12, 213];
+document.getElementById("demo").innerHTML = names;
+
+function add() {
+  var x=document.getElementById('newnum').value;
+    names.push(x);
+    document.getElementById("demo").innerHTML = names;
+}
+
+function median(){
+var data =document.getElementById("demo").innerHTML = names;
+var median=0;
+var len=data.length;
+data.sort();
+
+if (data.length % 2 ==0) {
+
+   alert(data[(len-1)/2] - data[(len/2)/2] );
+}else{
+
+ alert(data[(len-1)/2]);
+}
+
+
+
+}
+</script>
+	</header>
+
+	<label>birinci değer /first value </label>
+	<br>
+
+<input type="text" id="newnum">
+<br>
+<button onclick="add()">Veri ekle</button>
+<button onclick="median()">Medyan ekle</button>
+	<footer>
+
+
+	</footer>
+	</center>
+</body>
+</html>
+
