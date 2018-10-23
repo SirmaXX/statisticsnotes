@@ -7,7 +7,7 @@
 
 4.php ,google chart api ,pdo chart
 
+![data](https://user-images.githubusercontent.com/5777945/47357432-57897280-d6cf-11e8-9876-e913dba5ed99.png)
 
+![phpstaticstics](https://user-images.githubusercontent.com/5777945/47357464-696b1580-d6cf-11e8-9c4f-4b2916bcd9d8.png)
 
-![phpdata](https://user-images.githubusercontent.com/5777945/47357264-dfbb4800-d6ce-11e8-977b-a21545bb5890.png)
-![phpstaticstics](https://user-images.githubusercontent.com/5777945/47357282-e8ac1980-d6ce-11e8-9609-169444afcc18.png)
