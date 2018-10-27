@@ -2,7 +2,7 @@
 
 
 1-basic logic/basit mantık  ✓
-2-basic array jobs(median.etcc will join github)
+2-basic statictics jobs
 
 
 4.php ,google chart api ,pdo chart
