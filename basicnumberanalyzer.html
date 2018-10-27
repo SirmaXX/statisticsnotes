@@ -5,7 +5,7 @@
 		<meta charset="utf-8"> 
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<title>Staticstical Dataset explainer</title>
 
 </head>
 <body>
@@ -21,32 +21,7 @@
 <p id="demo"></p>
 
 <script>
-var names = [22, 33, 12, 213];
-document.getElementById("demo").innerHTML = names;
 
-function add() {
-  var x=document.getElementById('newnum').value;
-    names.push(x);
-    document.getElementById("demo").innerHTML = names;
-}
-
-function median(){
-var data =document.getElementById("demo").innerHTML = names;
-var median=0;
-var len=data.length;
-data.sort();
-
-if (data.length % 2 ==0) {
-
-   alert(data[(len-1)/2] - data[(len/2)/2] );
-}else{
-
- alert(data[(len-1)/2]);
-}
-
-
-
-}
 </script>
 	</header>
 
@@ -56,12 +31,20 @@ if (data.length % 2 ==0) {
 <input type="text" id="newnum">
 <br>
 <button onclick="add()">Veri ekle</button>
-<button onclick="median()">Medyan ekle</button>
+<button onclick="median()">Medyan Bul</button>
+<button onclick="prepare()">Verileri Sırala</button>
+<button onclick="findrange()">Range</button>
+<button onclick="mean()">mean</button>
+<button onclick="variance()">variance</button>
+<button onclick="devitaion()">standart devition </button>
+<button onclick="mode()">mode</button>
 	<footer>
 
 
 	</footer>
 	</center>
+
+	<script src="library.js" ></script>
 </body>
 </html>
 
